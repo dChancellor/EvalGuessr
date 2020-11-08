@@ -1,0 +1,20 @@
+.square{
+    height:80px;
+    width:80px;
+}
+
+.black{
+    background-color:rgb(161, 121, 95);
+}
+
+.white{
+    background-color:tan
+}
+
+.highlighted{
+    background-color:rgb(255 226 99 / 21%);
+}
+img{
+    height:80px;
+    width:80px;
+}

@@ -1,0 +1,14 @@
+.board{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-content:center;
+    height:auto;
+    box-shadow: 6px 3px 3px 2px #24242446;
+    z-index:99;
+}
+.row{
+    height:auto;
+    display:flex;
+    flex-flow:row;
+}

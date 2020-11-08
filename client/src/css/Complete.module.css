@@ -1,0 +1,70 @@
+.background {
+  background-color: rgba(122, 97, 97, 0.432);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.window {
+  width: 45%;
+  padding: 50px;
+  background-color: rgb(161, 177, 161);
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px 3px rgba(94, 88, 88, 0.281);
+}
+.tableHeader {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 15px;
+  background-color: rgb(63, 56, 56);
+  color: rgb(237 237 237);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+.tableHeader span {
+  margin-right: 15px;
+}
+
+.tableRow {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 5px;
+  color: rgb(53, 30, 9);
+  font-size: 1.3rem;
+}
+.tableRow span {
+  margin-right: 15px;
+}
+.results {
+  margin-top: 25px;
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+}
+.button {
+  margin: 10px;
+  font-size: 1.1rem;
+  padding: 15px 35px;
+  background-color: rgb(46, 90, 44);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 1px -1px 1px 1px rgba(34, 30, 27, 0.13);
+  border: none;
+  outline: none;
+}
+.button:hover {
+    background-color: rgb(79, 151, 75);
+}
+.button:focus {
+  background-color: rgb(71, 131, 68);
+  border: 1px solid rgb(71, 47, 14);
+}
+.button:active {
+  background-color: rgb(24, 46, 23);
+}
