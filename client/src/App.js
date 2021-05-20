@@ -16,7 +16,7 @@ import style from './css/App.module.css';
 function App() {
   const [rules, setRules] = useState();
   const { data, loading, error } = usePostRequest(
-    'http://localhost:4000',
+    'https://evalguessr.api.chancellor.tech',
     rules
   );
   const [roundCounter, setRoundCounter] = useState();
@@ -52,10 +52,11 @@ function App() {
   const handleGuess = (guess, time) => {
     let result = {};
     result.guess = guess;
-    result.actual = round.eval / 100
-    result.difference = Math.round(Math.abs(result.actual - result.guess)*100)/100
-    result.time = time
-    setResults([...results, result])
+    result.actual = round.eval / 100;
+    result.difference =
+      Math.round(Math.abs(result.actual - result.guess) * 100) / 100;
+    result.time = time;
+    setResults([...results, result]);
     if (data.length > roundCounter + 1) {
       setRoundCounter(roundCounter + 1);
     } else {
@@ -65,7 +66,7 @@ function App() {
 
   return (
     <section className={style.app}>
-      {completed && results && <Complete results={results}/>}
+      {completed && results && <Complete results={results} />}
       {!data && !loading && <Start begin={buildGame} />}
       {error && <Error error={error} />}
       {loading && <Loading />}
