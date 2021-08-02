@@ -7,7 +7,7 @@
   </h1>      
 
   <p>
-This came together in a one-weekend-only game challenge amongst a group of developers. I used the Lichess Developer API to pull over 100,000 games from their database. The game then takes a random game and a random position from that game and uses my own instance of Stockfish to evaluate the current position, taking into account what color's turn it is and the position of the pieces. It turns this data into a json package to deliver to the React client and allows the user to guess and ultimately get a score at the end.
+This came together in a one-weekend-only game challenge for a group of developers to each make a full-stack app. I used the Lichess Developer API to pull over 100,000 games from their database. The game then takes a random game and a random position from that game and uses my own instance of Stockfish to evaluate the current position, taking into account what color's turn it is and the position of the pieces. It turns this data into a json package to deliver to the React client and allows the user to guess and ultimately get a score at the end.
     <br>
   <p>
 
