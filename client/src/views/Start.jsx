@@ -26,7 +26,7 @@ function Start({ begin }) {
           calculate the position as. Positive numbers indicate that white has
           the advantage, and negative numbers indicate that black does.
         </p>
-        <h4>Good luck!</h4>
+        <h2>Good luck!</h2>
         <form autoComplete='off'>
           <label className={style.label} htmlFor='number-of-games'>
             Number of Games This Round  <span>(max 10)</span>
@@ -35,7 +35,7 @@ function Start({ begin }) {
           <input
             className={style.input}
             type='number'
-            name='number-of-games'
+            id='number-of-games'
             value={numberOfGames}
             onChange={(event) => {if(event.target.value <= 10 && event.target.value > 0)setNumberOfGames(event.target.value)}}
           ></input>
@@ -47,7 +47,7 @@ function Start({ begin }) {
           <input
             className={style.input}
             type='number'
-            name='calculation-time'
+            id='calculation-time'
             value={evaluationTime}
             onChange={(event) => {if(event.target.value <= 30 && event.target.value > 0)setEngineTime(event.target.value)}}
           ></input>
